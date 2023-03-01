@@ -2,6 +2,7 @@ const headersBtn = document.getElementById('headersBtn');
       const cookieBtn = document.getElementById('cookieBtn');
       const rsaBtn = document.getElementById('rsaBtn');
       const dataBtn = document.getElementById('dataBtn');
+      const transBtn = document.getElementById('transBtn');
       const input = document.getElementById('input');
       const output = document.getElementById('output');
       const copyBtn = document.getElementById('copyBtn');
@@ -74,6 +75,27 @@ const headersBtn = document.getElementById('headersBtn');
             .then(data => {
               console.log(data); // 输出JSON格式的数据
               output.value = JSON.stringify(JSON.parse(data.output), null, 2); // 将返回的数据放入output元素中
+            })
+            .catch(error => {
+              console.error('There was a problem with the fetch operation:', error);
+            });
+        });
+
+        //翻译
+        transBtn.addEventListener('click', () => {
+          const inputText = input.value.trim();
+          const url = '/t/';
+          fetch(url + inputText)
+            .then(response => {
+              if (response.ok) {
+                return response.json(); // 将response对象转换为JSON格式
+              } else {
+                throw new Error('Network response was not ok.');
+              }
+            })
+            .then(data => {
+              console.log(data); // 输出JSON格式的数据
+              output.value = data.output // 将返回的数据放入output元素中
             })
             .catch(error => {
               console.error('There was a problem with the fetch operation:', error);
