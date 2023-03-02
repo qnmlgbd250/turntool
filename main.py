@@ -95,24 +95,27 @@ def turn(taskid: str):
 @app.get("/t/{tstr}")
 def translate(tstr: str):
     try:
-        trans_type = 'auto2zh'
-        zh = re.findall('[\u4e00-\u9fa5]', tstr)
-        if zh:
-            trans_type = 'auto2en'
-        url = "http://api.interpreter.caiyunai.com/v1/translator"
-        token = "s18sjx2ek2pl83j7861p"
-        payload = {
-            "source": tstr,
-            "trans_type": trans_type,
-            "request_id": "demo",
-            "detect": True,
-        }
-        headers = {
-            "content-type": "application/json",
-            "x-authorization": "token " + token,
-        }
-        response = requests.request("POST", url, data=json.dumps(payload), headers=headers)
-        output = json.loads(response.text)["target"]
+        if not tstr:
+            output = {}
+        else:
+            trans_type = 'auto2zh'
+            zh = re.findall('[\u4e00-\u9fa5]', tstr)
+            if zh:
+                trans_type = 'auto2en'
+            url = "http://api.interpreter.caiyunai.com/v1/translator"
+            token = "s18sjx2ek2pl83j7861p"
+            payload = {
+                "source": tstr,
+                "trans_type": trans_type,
+                "request_id": "demo",
+                "detect": True,
+            }
+            headers = {
+                "content-type": "application/json",
+                "x-authorization": "token " + token,
+            }
+            response = requests.request("POST", url, data=json.dumps(payload), headers=headers)
+            output = json.loads(response.text)["target"]
     except:
         output = {}
 
