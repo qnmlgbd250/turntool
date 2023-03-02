@@ -16,6 +16,7 @@ from fastapi.templating import Jinja2Templates
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import HTMLResponse
 from fastapi.middleware.cors import CORSMiddleware
+import logging
 
 app = FastAPI()
 app.add_middleware(
@@ -28,6 +29,18 @@ app.add_middleware(
 
 app.mount("/static", StaticFiles(directory = "static"), name = "static")
 templates = Jinja2Templates(directory="templates")
+# 设置 logging
+logging.basicConfig(filename='app.log', level=logging.INFO)
+
+# 添加 middleware
+@app.middleware("http")
+async def log_requests(request: Request, call_next):
+    # 记录请求信息，包括请求方法、URL 和 IP 地址
+    logging.info(f"Received request {request.method} {request.url} from {request.client.host}")
+    response = await call_next(request)
+    # 记录响应信息，包括响应状态码
+    logging.info(f"Sent response {response.status_code}")
+    return response
 
 
 
