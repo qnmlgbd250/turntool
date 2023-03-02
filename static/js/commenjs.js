@@ -9,21 +9,36 @@ const headersBtn = document.getElementById('headersBtn');
       const clearBtn = document.getElementById('clearBtn');
 
       headersBtn.addEventListener('click', () => {
-        const inputText = input.value;
-        const headers = inputText.split('\n').reduce((acc, line) => {
-          const [key, value] = line.split(':');
-          if (key && value) {
-            acc[key.trim()] = value.trim();
-          }
-          return acc;
-        }, {});
+          const inputText = input.value;
 
-        const outputText = JSON.stringify(headers, null, 2);
-        output.value = outputText;
-      });
+          // 如果输入为空，将输出清空并返回
+          if (!inputText.trim()) {
+            output.value = '';
+            return;
+          }
+
+          const headers = inputText.split('\n').reduce((acc, line) => {
+            const [key, value] = line.split(':');
+            if (key && value) {
+              acc[key.trim()] = value.trim();
+            }
+            return acc;
+          }, {});
+
+          const outputText = JSON.stringify(headers, null, 2);
+          output.value = outputText;
+        });
+
 
       cookieBtn.addEventListener('click', () => {
         const inputText = input.value;
+
+        // 如果输入为空，将输出清空并返回
+          if (!inputText.trim()) {
+            output.value = '';
+            return;
+          }
+
         const cookies = inputText.split(';').reduce((acc, line) => {
           const [key, value] = line.split('=');
           if (key && value) {
