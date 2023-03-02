@@ -17,6 +17,7 @@ from fastapi.staticfiles import StaticFiles
 from fastapi.responses import HTMLResponse
 from fastapi.middleware.cors import CORSMiddleware
 import logging
+from datetime import datetime, timezone, timedelta
 
 app = FastAPI()
 app.add_middleware(
@@ -35,13 +36,14 @@ logging.basicConfig(filename='app.log', level=logging.INFO)
 # 添加 middleware
 @app.middleware("http")
 async def log_requests(request: Request, call_next):
-    # 记录请求信息，包括请求方法、URL 和 IP 地址
-    logging.info(f"Received request {request.method} {request.url} from {request.client.host}")
+    tz = timezone(timedelta(hours=8))  # 设置时区为北京时间
+    now = datetime.now(tz)
+    # 记录请求信息，包括请求方法、URL 和 IP 地址、请求时间
+    logging.info(f"[{now}] Received request {request.method} {request.url} from {request.client.host}")
     response = await call_next(request)
     # 记录响应信息，包括响应状态码
     logging.info(f"Sent response {response.status_code}")
     return response
-
 
 
 @app.get("/")
