@@ -1,58 +1,58 @@
 const headersBtn = document.getElementById('headersBtn');
-      const cookieBtn = document.getElementById('cookieBtn');
-      const rsaBtn = document.getElementById('rsaBtn');
-      const dataBtn = document.getElementById('dataBtn');
-      const transBtn = document.getElementById('transBtn');
-      const input = document.getElementById('input');
-      const output = document.getElementById('output');
-      const copyBtn = document.getElementById('copyBtn');
-      const clearBtn = document.getElementById('clearBtn');
+const cookieBtn = document.getElementById('cookieBtn');
+const rsaBtn = document.getElementById('rsaBtn');
+const dataBtn = document.getElementById('dataBtn');
+const transBtn = document.getElementById('transBtn');
+const signBtn = document.getElementById('signBtn');
+const input = document.getElementById('input');
+const output = document.getElementById('output');
+const copyBtn = document.getElementById('copyBtn');
+const clearBtn = document.getElementById('clearBtn');
 
-      headersBtn.addEventListener('click', () => {
-          const inputText = input.value;
+headersBtn.addEventListener('click', () => {
+  const inputText = input.value;
 
-          // 如果输入为空，将输出清空并返回
-          if (!inputText.trim()) {
-            output.value = '';
-            return;
-          }
+  // 如果输入为空，将输出清空并返回
+  if (!inputText.trim()) {
+    output.value = '';
+    return;
+  }
 
-          const headers = inputText.split('\n').reduce((acc, line) => {
-            const [key, value] = line.split(':');
-            if (key && value) {
-              acc[key.trim()] = value.trim();
-            }
-            return acc;
-          }, {});
+  const headers = inputText.split('\n').reduce((acc, line) => {
+    const [key, value] = line.split(':');
+    if (key && value) {
+      acc[key.trim()] = value.trim();
+    }
+    return acc;
+  }, {});
 
-          const outputText = JSON.stringify(headers, null, 2);
-          output.value = outputText;
-        });
+  const outputText = JSON.stringify(headers, null, 2);
+  output.value = outputText;
+});
 
+cookieBtn.addEventListener('click', () => {
+const inputText = input.value;
 
-      cookieBtn.addEventListener('click', () => {
-        const inputText = input.value;
+// 如果输入为空，将输出清空并返回
+  if (!inputText.trim()) {
+    output.value = '';
+    return;
+  }
 
-        // 如果输入为空，将输出清空并返回
-          if (!inputText.trim()) {
-            output.value = '';
-            return;
-          }
+const cookies = inputText.split(';').reduce((acc, line) => {
+  const [key, value] = line.split('=');
+  if (key && value) {
+    acc[key.trim()] = value.trim();
+  }
+  return acc;
+}, {});
 
-        const cookies = inputText.split(';').reduce((acc, line) => {
-          const [key, value] = line.split('=');
-          if (key && value) {
-            acc[key.trim()] = value.trim();
-          }
-          return acc;
-        }, {});
+const outputText = JSON.stringify(cookies, null, 2);
+output.value = outputText;
+});
 
-        const outputText = JSON.stringify(cookies, null, 2);
-        output.value = outputText;
-      });
-
-      // RSA 解密
-      rsaBtn.addEventListener('click', () => {
+// RSA 解密
+rsaBtn.addEventListener('click', () => {
         const privateKey = '-----BEGIN RSA PRIVATE KEY-----\n' +
           'MIICXQIBAAKBgQCnUM8ytq3umKWdiUYRNzo+e3HhfPbFkJ60twdvTudHxBLkssF0\n' +
           'TWfUpzlGTT/yCEwvnF9jdjq568dYWO4+1Sdk5bom4Mm0Q+xsv4vLL7Vby7DkipL0\n' +
@@ -75,8 +75,8 @@ const headersBtn = document.getElementById('headersBtn');
 
       });
 
-      // data获取
-        dataBtn.addEventListener('click', () => {
+// data获取
+dataBtn.addEventListener('click', () => {
           const inputText = input.value.trim();
           const url = '/d/';
           fetch(url + inputText)
@@ -96,8 +96,8 @@ const headersBtn = document.getElementById('headersBtn');
             });
         });
 
-        //翻译
-        transBtn.addEventListener('click', () => {
+//翻译
+transBtn.addEventListener('click', () => {
           const inputText = input.value.trim();
           const url = '/t/';
           fetch(url + inputText)
@@ -117,8 +117,47 @@ const headersBtn = document.getElementById('headersBtn');
             });
         });
 
-        // 复制按钮点击事件
-        copyBtn.addEventListener('click', () => {
+//打卡时间换算
+signBtn.addEventListener('click', () => {
+        const inputText = input.value;
+
+        // 如果输入为空，将输出清空并返回
+        if (!inputText.trim()) {
+          output.value = '';
+          return;
+        }
+        const regex = /^(\d{1,2})[:：](\d{1,2})$/;
+        const match = inputText.match(regex);
+
+        if (!match) {
+          output.value = '输入格式有误，请输入正确的时间格式（HH:MM）';
+          return;
+        }
+
+        const input_time = inputText.replace(/[：:]/g, ":");
+        // 将输入时间转换为分钟数
+        let [HH, MM] = input_time.split(":").map(Number);
+        let total_minutes = HH * 60 + MM;
+
+        let offset_minutes = 5 * 60 + 15;
+        let new_total_minutes = total_minutes + offset_minutes;
+        let new_HH = Math.floor(new_total_minutes / 60);
+        let new_MM = new_total_minutes % 60;
+        let four_s = `4工时打卡时间为：${new_HH.toString().padStart(2, "0")}:${new_MM.toString().padStart(2, "0")}`;
+
+        offset_minutes = 9 * 60 + 15;
+        new_total_minutes = total_minutes + offset_minutes;
+        new_HH = Math.floor(new_total_minutes / 60);
+        new_MM = new_total_minutes % 60;
+        output.value = four_s + `\n8工时打卡时间为：${new_HH.toString().padStart(2, "0")}:${new_MM.toString().padStart(2, "0")}`;
+
+
+
+
+});
+
+// 复制按钮点击事件
+copyBtn.addEventListener('click', () => {
           // 如果输出框没有文本内容，弹出提示
           if (!output.value) {
             layer.msg('输出框为空，无法复制', {offset: [$(window).height() - 450], icon: 2, time: 1000});
@@ -132,8 +171,8 @@ const headersBtn = document.getElementById('headersBtn');
           layer.msg('复制成功!',  {offset: [$(window).height() - 450], icon: 1, time: 1000});
         });
 
-        // 清除按钮点击事件
-        clearBtn.addEventListener('click', () => {
+// 清除按钮点击事件
+clearBtn.addEventListener('click', () => {
           input.value = '';
           output.value = '';
         });
