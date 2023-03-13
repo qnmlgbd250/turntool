@@ -94,6 +94,10 @@ def turn(taskid: str):
 @app.get("/t/{tstr}")
 def translate(tstr: str):
     try:
+        proxies = {
+            "http": None,
+            "https": None,
+        }
         if not tstr:
             output = {}
         else:
@@ -113,17 +117,12 @@ def translate(tstr: str):
                 "content-type": "application/json",
                 "x-authorization": "token " + token,
             }
-            response = requests.request("POST", url, data=json.dumps(payload), headers=headers)
+            response = requests.request("POST", url, data=json.dumps(payload), headers=headers, proxies=proxies)
             output = json.loads(response.text)["target"]
     except:
         output = {}
 
     return {'output': output}
-
-
-
-
-
 
 
 

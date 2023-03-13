@@ -119,42 +119,60 @@ transBtn.addEventListener('click', () => {
 
 //打卡时间换算
 signBtn.addEventListener('click', () => {
-        const inputText = input.value;
+          const inputText = input.value.replace(/\s/g, '');
 
-        // 如果输入为空，将输出清空并返回
-        if (!inputText.trim()) {
-          output.value = '';
-          return;
-        }
-        const regex = /^(\d{1,2})[:：](\d{1,2})$/;
-        const match = inputText.match(regex);
+          // 如果输入为空，将输出清空并返回
+          if (!inputText.trim()) {
+            output.value = '';
+            return;
+          }
 
-        if (!match) {
-          output.value = '输入格式有误，请输入正确的时间格式（HH:MM）';
-          return;
-        }
+          const regex = /^(\d{1,2})[:：](\d{1,2})$/;
+          const match = inputText.match(regex);
 
-        const input_time = inputText.replace(/[：:]/g, ":");
-        // 将输入时间转换为分钟数
-        let [HH, MM] = input_time.split(":").map(Number);
-        let total_minutes = HH * 60 + MM;
+          if (!match) {
+            output.value = '输入格式有误，请输入正确的时间格式（HH:MM）';
+            return;
+          }
 
-        let offset_minutes = 5 * 60 + 15;
-        let new_total_minutes = total_minutes + offset_minutes;
-        let new_HH = Math.floor(new_total_minutes / 60);
-        let new_MM = new_total_minutes % 60;
-        let four_s = `4工时打卡时间为：${new_HH.toString().padStart(2, "0")}:${new_MM.toString().padStart(2, "0")}`;
+          const input_time = inputText.replace(/[：:]/g, ':');
+          const [HH, MM] = input_time.split(':').map(Number);
 
-        offset_minutes = 9 * 60 + 15;
-        new_total_minutes = total_minutes + offset_minutes;
-        new_HH = Math.floor(new_total_minutes / 60);
-        new_MM = new_total_minutes % 60;
-        output.value = four_s + `\n8工时打卡时间为：${new_HH.toString().padStart(2, "0")}:${new_MM.toString().padStart(2, "0")}`;
+          if (HH < 8 || (HH === 8 && MM < 30)) {
+            output.value = '正常打卡时间在 8:30 之后';
+            return;
+          }
 
+          let four_offset_minutes = 0;
+          let eight_offset_minutes = 0;
 
+          if ((HH === 8 && MM >= 30) || (HH > 8 && HH < 12) || (HH === 12 && MM < 15)) {
+            four_offset_minutes = 5 * 60 + 15;
+            eight_offset_minutes = 9 * 60 + 15;
+          } else if ((HH === 12 && MM >= 15) || (HH > 12 && HH < 13) || (HH === 13 && MM < 30)) {
+            four_offset_minutes = (13 * 60 + 30 - HH * 60 - MM + 4 * 60) % (24 * 60);
+            eight_offset_minutes = (13 * 60 + 30 - HH * 60 - MM + 8 * 60) % (24 * 60);
+          } else if ((HH === 13 && MM >= 30) || (HH > 13)) {
+            four_offset_minutes = 4 * 60;
+            eight_offset_minutes = 8 * 60;
+          } else {
+            output.value = '输入时间范围有误，请输入正确的时间格式（HH:MM）';
+            return;
+          }
 
+          let total_minutes = HH * 60 + MM;
 
+          let new_total_minutes = (total_minutes + four_offset_minutes) % (24 * 60);
+          let new_HH = Math.floor(new_total_minutes / 60);
+          let new_MM = new_total_minutes % 60;
+          let four_s = `4工时打卡时间为：${new_HH.toString().padStart(2, '0')}:${new_MM.toString().padStart(2, '0')}`;
+
+          new_total_minutes = (total_minutes + eight_offset_minutes) % (24 * 60);
+          new_HH = Math.floor(new_total_minutes / 60);
+          new_MM = new_total_minutes % 60;
+          output.value = four_s + `\n8工时打卡时间为：${new_HH.toString().padStart(2, '0')}:${new_MM.toString().padStart(2, '0')}`;
 });
+
 
 // 复制按钮点击事件
 copyBtn.addEventListener('click', () => {
