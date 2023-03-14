@@ -194,3 +194,9 @@ clearBtn.addEventListener('click', () => {
           input.value = '';
           output.value = '';
         });
+//全局右键事件--清空内容
+function clearContent(event) {
+			event.preventDefault(); // 阻止默认右键菜单
+			document.getElementById("input").value = ""; // 清空输入框
+			document.getElementById("output").value = ""; // 清空输出框
+		}
