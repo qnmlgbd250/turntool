@@ -36,12 +36,14 @@ logging.basicConfig(filename='app.log', level=logging.INFO)
 # 添加 middleware
 @app.middleware("http")
 async def log_requests(request: Request, call_next):
-    now = datetime.now().strftime('%Y-%m-%d %H:%M:%S')  # 设置时区为北京时间
-    # 记录请求信息，包括请求方法、URL 和 IP 地址、请求时间
-    logging.info(f"{now} | 请求 {request.method} | {request.url} | 请求IP {request.client.host}")
+    if 'static' not in request.url.path:
+        now = datetime.now().strftime('%Y-%m-%d %H:%M:%S')  # 设置时区为北京时间
+        # 记录请求信息，包括请求方法、URL 和 IP 地址、请求时间
+        logging.info(f"{now} | 请求 {request.method} | {request.url} | 请求IP {request.client.host}")
     response = await call_next(request)
-    # 记录响应信息，包括响应状态码
-    logging.info(f"响应 | {response.status_code}")
+    if 'static' not in request.url.path:
+        # 记录响应信息，包括响应状态码
+        logging.info(f"响应 | {response.status_code}")
     return response
 
 
@@ -73,10 +75,7 @@ def turn(taskid: str):
             resp = requests.get('https://mtax.kdzwy.com/taxtask/api/task/history', params=param, proxies=proxies).json()
             if ((not resp['data'].get('defaultRule')) and (resp['data']['region'] not in old_region_list)) or resp['data']['accName'] in accname:
                 resp['data']['defaultRule'] = rule_json_list
-            if resp.get('code') in [301]:
-                resp = requests.get('https://test1.kdzwy.com/taxtask/api/task/history', params=param, proxies=proxies).json()
-                if not resp['data'].get('defaultRule'):
-                    resp['data']['defaultRule'] = rule_json_list
+
         elif taskid.startswith('3'):
             resp = requests.get('https://tax.kdzwy.com/taxtask/api/task/history', params=param, proxies=proxies).json()
             if (not resp['data'].get('defaultRule')) and (resp['data']['region'] not in old_region_list):
