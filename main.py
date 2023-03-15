@@ -73,7 +73,7 @@ def turn(taskid: str):
         if taskid.startswith('1'):
 
             resp = requests.get('https://mtax.kdzwy.com/taxtask/api/task/history', params=param, proxies=proxies).json()
-            if ((not resp['data'].get('defaultRule')) and (resp['data']['region'] not in old_region_list)) or resp['data']['accName'] in accname:
+            if ((not resp['data'].get('defaultRule')) and (resp['data']['region'] not in old_region_list)) or resp['data'].get('accName') in accname:
                 resp['data']['defaultRule'] = rule_json_list
 
         elif taskid.startswith('3'):
