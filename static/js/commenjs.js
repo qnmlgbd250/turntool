@@ -4,13 +4,14 @@ const rsaBtn = document.getElementById('rsaBtn');
 const dataBtn = document.getElementById('dataBtn');
 const transBtn = document.getElementById('transBtn');
 const signBtn = document.getElementById('signBtn');
+const ocrBtn = document.getElementById('ocrBtn');
 const input = document.getElementById('input');
 const output = document.getElementById('output');
 const copyBtn = document.getElementById('copyBtn');
 const clearBtn = document.getElementById('clearBtn');
 
 headersBtn.addEventListener('click', () => {
-  const inputText = input.value;
+  const inputText = input.textContent;
 
   // 如果输入为空，将输出清空并返回
   if (!inputText.trim()) {
@@ -31,7 +32,7 @@ headersBtn.addEventListener('click', () => {
 });
 
 cookieBtn.addEventListener('click', () => {
-const inputText = input.value;
+const inputText = input.textContent;
 
 // 如果输入为空，将输出清空并返回
   if (!inputText.trim()) {
@@ -68,7 +69,7 @@ rsaBtn.addEventListener('click', () => {
           'zq8Vw27aqJgKBU97DZECQQDedmYTpRp0SXb3oUlMXuLhypDNXOG6Sb1kROVCQzAu\n' +
           'lkT3KLOjoCv4zVvQJkRg1X8FgzP/qRESc797fQfRmYmI\n' +
           '-----END RSA PRIVATE KEY-----';
-        const inputText = input.value;
+        const inputText = input.textContent;
         const rsa = new JSEncrypt();
         rsa.setPrivateKey(privateKey);
         output.value =  rsa.decrypt(inputText);
@@ -77,7 +78,7 @@ rsaBtn.addEventListener('click', () => {
 
 // data获取
 dataBtn.addEventListener('click', () => {
-          const inputText = input.value.trim();
+          const inputText = input.textContent.trim();
           const url = '/d/';
           fetch(url + inputText)
             .then(response => {
@@ -98,7 +99,7 @@ dataBtn.addEventListener('click', () => {
 
 //翻译
 transBtn.addEventListener('click', () => {
-          const inputText = input.value.trim();
+          const inputText = input.textContent.trim();
           const url = '/t/';
           fetch(url + inputText)
             .then(response => {
@@ -119,7 +120,7 @@ transBtn.addEventListener('click', () => {
 
 //打卡时间换算
 signBtn.addEventListener('click', () => {
-          const inputText = input.value.replace(/\s/g, '');
+          const inputText = input.textContent.replace(/\s/g, '');
 
           // 如果输入为空，将输出清空并返回
           if (!inputText.trim()) {
@@ -173,6 +174,36 @@ signBtn.addEventListener('click', () => {
           output.value = four_s + `\n8工时打卡时间为：${new_HH.toString().padStart(2, '0')}:${new_MM.toString().padStart(2, '0')}`;
 });
 
+//ocr识别
+ocrBtn.addEventListener('click', () => {
+      const inputText = input.querySelector('img').getAttribute('src').trim();
+      const url = '/o';
+      fetch(url, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({image: inputText})
+      })
+      .then(response => {
+        if (response.ok) {
+          return response.json(); // 将response对象转换为JSON格式
+        } else {
+          throw new Error('Network response was not ok.');
+        }
+      })
+      .then(data => {
+        console.log(data); // 输出JSON格式的数据
+        output.value = data.output // 将返回的数据放入output元素中
+      })
+      .catch(error => {
+        console.error('There was a problem with the fetch operation:', error);
+      });
+    });
+
+
+
 
 // 复制按钮点击事件
 copyBtn.addEventListener('click', () => {
@@ -191,12 +222,12 @@ copyBtn.addEventListener('click', () => {
 
 // 清除按钮点击事件
 clearBtn.addEventListener('click', () => {
-          input.value = '';
+          input.innerHTML = '';
           output.value = '';
         });
 //全局右键事件--清空内容
 function clearContent(event) {
 			event.preventDefault(); // 阻止默认右键菜单
-			document.getElementById("input").value = ""; // 清空输入框
+			document.getElementById("input").innerHTML = ""; // 清空输入框
 			document.getElementById("output").value = ""; // 清空输出框
 		}

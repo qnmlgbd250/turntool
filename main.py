@@ -11,6 +11,8 @@ import requests
 from datetime import datetime
 from fastapi import FastAPI, Form, Request
 import uvicorn
+from typing import Dict
+import urllib.parse
 import lzstring
 from fastapi.templating import Jinja2Templates
 from fastapi.staticfiles import StaticFiles
@@ -122,6 +124,49 @@ def translate(tstr: str):
         output = {}
 
     return {'output': output}
+
+
+@app.post("/o")
+async def ocr(request: Request):
+    API_KEY = "zaoZ9K2OQIvgNhm9gr8rjjEo"
+    SECRET_KEY = "Ov05o1fmdtACt4OI8thRcPZLIjGHcUph"
+    try:
+        proxies = {
+            "http": None,
+            "https": None,
+        }
+        data = await request.json()
+        image = data.get("image", "")
+        if not image:
+            output = {}
+        else:
+            url = "https://aip.baidubce.com/oauth/2.0/token"
+            params = {"grant_type": "client_credentials", "client_id": API_KEY, "client_secret": SECRET_KEY}
+            access_token = str(requests.post(url, params=params, proxies=proxies).json().get("access_token"))
+            url = f"https://aip.baidubce.com/rest/2.0/ocr/v1/accurate_basic?access_token={access_token}"
+
+            # 对二进制数据进行URL编码
+            url_encoded_data = urllib.parse.quote(image.split(",")[1])
+            payload = 'image=' + url_encoded_data
+            headers = {
+                'Content-Type': 'application/x-www-form-urlencoded',
+                'Accept': 'application/json'
+            }
+
+            response = requests.request("POST", url, headers=headers, data=payload, proxies=proxies)
+            if 'error' in str(response.text):
+                output = {}
+            if 'words_result' in str(response.text):
+                output = ''
+                res = response.json()
+                for line in res['words_result']:
+                    output += line['words'] + '\n'
+
+    except:
+        output = {}
+
+    return {'output': output}
+
 
 
 
