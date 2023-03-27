@@ -11,7 +11,7 @@ const copyBtn = document.getElementById('copyBtn');
 const clearBtn = document.getElementById('clearBtn');
 
 headersBtn.addEventListener('click', () => {
-  const inputText = input.textContent;
+  const inputText = input.innerText ;
 
   // 如果输入为空，将输出清空并返回
   if (!inputText.trim()) {
@@ -32,7 +32,7 @@ headersBtn.addEventListener('click', () => {
 });
 
 cookieBtn.addEventListener('click', () => {
-const inputText = input.textContent;
+const inputText = input.innerText ;
 
 // 如果输入为空，将输出清空并返回
   if (!inputText.trim()) {
