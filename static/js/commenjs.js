@@ -11,7 +11,7 @@ const copyBtn = document.getElementById('copyBtn');
 const clearBtn = document.getElementById('clearBtn');
 
 headersBtn.addEventListener('click', () => {
-  const inputText = input.innerText ;
+  const inputText = input.textContent;
 
   // 如果输入为空，将输出清空并返回
   if (!inputText.trim()) {
@@ -19,20 +19,36 @@ headersBtn.addEventListener('click', () => {
     return;
   }
 
-  const headers = inputText.split('\n').reduce((acc, line) => {
-    const [key, value] = line.split(':');
-    if (key && value) {
-      acc[key.trim()] = value.trim();
-    }
-    return acc;
-  }, {});
+  const headers = parseHeaders(inputText);
 
   const outputText = JSON.stringify(headers, null, 2);
   output.value = outputText;
 });
 
+// 解析 HTTP 请求头字符串
+function parseHeaders(headerStr) {
+  const lines = headerStr.split(/\r?\n/);
+  const headers = {};
+
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i];
+    const index = line.indexOf(':');
+    if (index !== -1) {
+      const key = line.slice(0, index).trim();
+      const value = line.slice(index + 1).trim();
+      if (headers[key]) {
+        headers[key] += ', ' + value;
+      } else {
+        headers[key] = value;
+      }
+    }
+  }
+
+  return headers;
+}
+
 cookieBtn.addEventListener('click', () => {
-const inputText = input.innerText ;
+const inputText = input.textContent ;
 
 // 如果输入为空，将输出清空并返回
   if (!inputText.trim()) {
@@ -231,3 +247,47 @@ function clearContent(event) {
 			document.getElementById("input").innerHTML = ""; // 清空输入框
 			document.getElementById("output").value = ""; // 清空输出框
 		}
+
+//输入事件监听
+const editableDiv = document.getElementById("input");
+
+editableDiv.addEventListener('paste', function(event) {
+  // 阻止默认粘贴行为
+  event.preventDefault();
+
+  // 获取剪贴板内容
+  const items = (event.clipboardData || event.originalEvent.clipboardData).items;
+  const text = event.clipboardData.getData('text/plain');
+  if (text) {
+          // 将纯文本插入到 div 中
+          document.execCommand('insertText', false, text);
+
+          // 更新 div 内容
+          const newText = editableDiv.innerText;
+          editableDiv.innerHTML = newText;
+      }
+
+  // 遍历剪贴板项，检查是否有图像数据
+  for (let i = 0; i < items.length; i++) {
+    if (items[i].type.indexOf('image') !== -1) {    // 如果存在图像类型的剪贴板项
+
+      // 获取文件对象
+      const file = items[i].getAsFile();
+
+      // 使用 FileReader 读取图像文件，并将其作为 data URL 插入到 div 中
+      const reader = new FileReader();
+      reader.onload = function(event) {
+        const img = new Image();
+        img.src = event.target.result;
+        editableDiv.appendChild(img);
+      };
+      reader.readAsDataURL(file);   // 将文件转换成 Data URL
+
+      // 更新 div 内容
+      const newText = editableDiv.innerText;
+      editableDiv.innerHTML = newText;
+    }
+  }
+});
+
+

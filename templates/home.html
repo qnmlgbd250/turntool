@@ -56,6 +56,19 @@
 
         }
 
+       ::-webkit-scrollbar {
+          width: 10px;
+          height: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+          background-color: #000;
+        }
+
+        ::-webkit-scrollbar-thumb {
+          background-color: #f5f5f5;
+        }
+
       .input-output {
           display: flex;
           flex-direction: column;
@@ -150,7 +163,7 @@
 <canvas></canvas>
       <!-- 左侧输入框 -->
       <div class="input-output">
-        <div id="input" contenteditable="true"></div>
+        <div id="input" contenteditable="true" style="overflow-y: scroll;"></div>
       </div>
 
       <!-- 转换菜单栏 -->
