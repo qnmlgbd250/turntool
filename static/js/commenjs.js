@@ -308,6 +308,14 @@ editableDiv.addEventListener('paste', function(event) {
         const img = new Image();
         img.src = event.target.result;
         editableDiv.appendChild(img);
+
+        // 将光标位置设置为最后一个字符的位置
+        const range = document.createRange();
+        range.selectNodeContents(editableDiv);
+        range.collapse(false);
+        const sel = window.getSelection();
+        sel.removeAllRanges();
+        sel.addRange(range);
       };
       reader.readAsDataURL(file);   // 将文件转换成 Data URL
 
@@ -316,6 +324,12 @@ editableDiv.addEventListener('paste', function(event) {
       editableDiv.innerHTML = newText;
     }
   }
+  const selection = window.getSelection();
+  const range = document.createRange();
+  range.selectNodeContents(editableDiv);
+  range.collapse(false);
+  selection.removeAllRanges();
+  selection.addRange(range);
 });
 
 
