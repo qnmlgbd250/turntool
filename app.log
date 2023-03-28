@@ -1,0 +1,653 @@
+INFO:root:2023-03-14 14:25:43 | 请求 GET | http://127.0.0.1:20232/ | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:uvicorn.error:Started server process [21000]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:root:2023-03-14 14:32:36 | 请求 GET | http://127.0.0.1:20232/ | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-14 14:41:42 | 请求 GET | http://127.0.0.1:20232/ | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-14 14:41:53 | 请求 GET | http://127.0.0.1:20232/ | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-14 14:41:55 | 请求 GET | http://127.0.0.1:20232/ | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-14 14:44:24 | 请求 GET | http://127.0.0.1:20232/ | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-14 14:50:27 | 请求 GET | http://127.0.0.1:20232/ | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-14 14:51:54 | 请求 GET | http://127.0.0.1:20232/ | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-14 18:14:40 | 请求 GET | http://172.21.34.93:20232/ | 请求IP 172.21.33.121
+INFO:root:响应 | 200
+INFO:root:2023-03-14 18:16:17 | 请求 GET | http://127.0.0.1:20232/d/3667066900048244736 | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-14 18:23:22 | 请求 GET | http://127.0.0.1:20232/d/3667093281314476032 | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-15 09:29:01 | 请求 GET | http://127.0.0.1:20232/d/1664498430558781440 | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-15 09:29:05 | 请求 GET | http://127.0.0.1:20232/d/1664498430558781440 | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-15 09:29:08 | 请求 GET | http://127.0.0.1:20232/d/1664498430558781440 | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-15 09:29:16 | 请求 GET | http://127.0.0.1:20232/d/1664498430558781440 | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-15 09:29:21 | 请求 GET | http://127.0.0.1:20232/ | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-15 09:29:25 | 请求 GET | http://127.0.0.1:20232/d/1664498430558781440 | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-15 09:30:07 | 请求 GET | http://127.0.0.1:20232/d/1664498430558781440 | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-15 09:30:42 | 请求 GET | http://127.0.0.1:20232/d/1664498430558781440 | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:uvicorn.error:Started server process [7392]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:uvicorn.error:Will watch for changes in these directories: ['D:\\turntool']
+INFO:uvicorn.error:Uvicorn running on http://0.0.0.0:20233 (Press CTRL+C to quit)
+INFO:uvicorn.error:Started reloader process [27824] using watchgod
+INFO:uvicorn.error:Started server process [28700]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:root:2023-03-15 09:31:11 | 请求 GET | http://127.0.0.1:20233/ | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-15 09:31:23 | 请求 GET | http://127.0.0.1:20233/d/1664498430558781440 | 请求IP 127.0.0.1
+INFO:uvicorn.error:Shutting down
+INFO:uvicorn.error:Stopping reloader process [27824]
+INFO:uvicorn.error:Started server process [30416]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:uvicorn.error:Will watch for changes in these directories: ['D:\\turntool']
+INFO:uvicorn.error:Uvicorn running on http://0.0.0.0:20233 (Press CTRL+C to quit)
+INFO:uvicorn.error:Started reloader process [22140] using watchgod
+INFO:uvicorn.error:Started server process [20332]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:root:2023-03-15 09:32:23 | 请求 GET | http://127.0.0.1:20233/d/1664498430558781440 | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:uvicorn.error:Shutting down
+INFO:root:2023-03-15 09:32:45 | 请求 GET | http://127.0.0.1:20232/ | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-15 09:32:49 | 请求 GET | http://127.0.0.1:20232/d/1664498430558781440 | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-15 09:51:40 | 请求 GET | http://172.21.34.93:20232/ | 请求IP 172.21.34.92
+INFO:root:响应 | 200
+INFO:root:2023-03-15 10:00:36 | 请求 GET | http://127.0.0.1:20232/t/An existing connection was forcibly closed by the remote host | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-15 10:00:41 | 请求 GET | http://127.0.0.1:20232/t/An existing connection was forcibly closed by the remote host | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:uvicorn.error:Started server process [12644]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:root:2023-03-15 10:16:17 | 请求 GET | http://127.0.0.1:20232/d/3663075824233529344 | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-15 16:28:55 | 请求 GET | http://127.0.0.1:20232/d/1667431810832662528 | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-16 10:02:46 | 请求 GET | http://172.21.34.93:20232/ | 请求IP 172.21.34.102
+INFO:root:响应 | 200
+INFO:root:2023-03-16 10:10:58 | 请求 GET | http://172.21.34.93:20232/ | 请求IP 172.21.33.120
+INFO:root:响应 | 200
+INFO:root:2023-03-16 10:11:00 | 请求 GET | http://172.21.34.93:20232/d/1667694700282077184 | 请求IP 172.21.33.120
+INFO:root:响应 | 200
+INFO:root:2023-03-16 10:55:20 | 请求 GET | http://172.21.34.93:20232/d/1665536935175872512 | 请求IP 172.21.33.120
+INFO:root:响应 | 200
+INFO:root:2023-03-16 13:44:09 | 请求 GET | http://127.0.0.1:20232/d/1667752483025530880 | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-16 14:04:58 | 请求 GET | http://127.0.0.1:20232/d/1667757761200340992 | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-16 14:25:38 | 请求 GET | http://127.0.0.1:20232/d/1667762823066763264 | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-16 16:57:50 | 请求 GET | http://172.21.34.93:20232/ | 请求IP 172.21.33.120
+INFO:root:响应 | 200
+INFO:root:2023-03-16 16:57:51 | 请求 GET | http://172.21.34.93:20232/d/1659785831252656128 | 请求IP 172.21.33.120
+INFO:root:响应 | 200
+INFO:uvicorn.error:Started server process [13436]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:root:2023-03-17 10:52:56 | 请求 GET | http://127.0.0.1:20232/ | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-17 15:03:08 | 请求 GET | http://127.0.0.1:20232/d/1668133465416613888 | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-20 15:02:36 | 请求 GET | http://172.21.34.93:20232/ | 请求IP 172.21.33.120
+INFO:root:响应 | 200
+INFO:root:2023-03-20 15:02:38 | 请求 GET | http://172.21.34.93:20232/d/1669218975400173568 | 请求IP 172.21.33.120
+INFO:root:响应 | 200
+INFO:root:2023-03-20 15:15:16 | 请求 GET | http://172.21.34.93:20232/ | 请求IP 172.21.33.120
+INFO:root:响应 | 200
+INFO:root:2023-03-20 15:47:12 | 请求 GET | http://172.21.34.93:20232/ | 请求IP 172.21.33.120
+INFO:root:响应 | 200
+INFO:root:2023-03-20 15:47:12 | 请求 GET | http://172.21.34.93:20232/ | 请求IP 172.21.33.120
+INFO:root:响应 | 200
+INFO:root:2023-03-20 15:47:13 | 请求 GET | http://172.21.34.93:20232/d/1669232426398171136 | 请求IP 172.21.33.120
+INFO:root:响应 | 200
+INFO:root:2023-03-20 17:56:23 | 请求 GET | http://172.21.34.93:20232/ | 请求IP 172.21.33.121
+INFO:root:响应 | 200
+INFO:root:2023-03-21 15:17:24 | 请求 GET | http://127.0.0.1:20232/d/1669583401670758400 | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-21 15:34:31 | 请求 GET | http://127.0.0.1:20232/d/1669583401670758400 | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-21 16:39:33 | 请求 GET | http://127.0.0.1:20232/d/3669535581533671424 | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-21 16:57:44 | 请求 GET | http://127.0.0.1:20232/d/1669611043843801088 | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-21 17:09:27 | 请求 GET | http://127.0.0.1:20232/d/1669611043747332096 | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-21 18:00:01 | 请求 GET | http://127.0.0.1:20232/d/1669628301152419840 | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-21 18:10:59 | 请求 GET | http://127.0.0.1:20232/d/1669611043843801088 | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-21 20:15:15 | 请求 GET | http://127.0.0.1:20232/d/3669659261458747392 | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-21 20:30:49 | 请求 GET | http://127.0.0.1:20232/d/1669625879480324096 | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-22 14:15:02 | 请求 GET | http://127.0.0.1:20232/t/mini-grid-scroller | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-22 14:22:48 | 请求 GET | http://172.21.34.93:20232/d/1669936641279574016 | 请求IP 172.21.33.120
+INFO:root:响应 | 200
+INFO:root:2023-03-22 14:36:02 | 请求 GET | http://172.21.34.93:20232/d/1669939075332714496 | 请求IP 172.21.33.120
+INFO:root:响应 | 200
+INFO:root:2023-03-22 15:12:51 | 请求 GET | http://172.21.34.93:20232/d/1669949093641728000 | 请求IP 172.21.33.120
+INFO:root:响应 | 200
+INFO:root:2023-03-22 15:17:43 | 请求 GET | http://127.0.0.1:20232/d/3669949543597248512 | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-22 15:18:17 | 请求 GET | http://127.0.0.1:20232/d/3669949543597248512 | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-22 15:27:08 | 请求 GET | http://127.0.0.1:20232/d/3669949543597248512 | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-22 15:27:17 | 请求 GET | http://127.0.0.1:20232/d/3669947083904028672 | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-22 15:27:32 | 请求 GET | http://127.0.0.1:20232/d/3669952970718744576 | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-22 15:28:48 | 请求 GET | http://127.0.0.1:20232/d/3669952970718744576 | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-22 15:30:01 | 请求 GET | http://127.0.0.1:20232/d/3669952970718744576 | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-22 16:10:20 | 请求 GET | http://127.0.0.1:20232/d/3669957994425389056 | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-22 16:11:51 | 请求 GET | http://127.0.0.1:20232/d/3669963844623831040 | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-22 16:12:53 | 请求 GET | http://127.0.0.1:20232/d/3669964341896318976 | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-22 16:20:28 | 请求 GET | http://127.0.0.1:20232/d/3669966150169825280 | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-22 17:16:48 | 请求 GET | http://172.21.34.93:20232/d/1669949093641728000 | 请求IP 172.21.33.120
+INFO:root:响应 | 200
+INFO:root:2023-03-22 17:16:53 | 请求 GET | http://172.21.34.93:20232/d/1669949093641728000 | 请求IP 172.21.33.120
+INFO:root:响应 | 200
+INFO:root:2023-03-22 17:51:24 | 请求 GET | http://172.21.34.93:20232/d/1669989251834433536 | 请求IP 172.21.33.120
+INFO:root:响应 | 200
+INFO:root:2023-03-22 18:05:13 | 请求 GET | http://172.21.34.93:20232/d/1669989251834433536 | 请求IP 172.21.33.120
+INFO:root:响应 | 200
+INFO:root:2023-03-23 09:55:22 | 请求 GET | http://172.21.34.93:20232/ | 请求IP 172.21.33.120
+INFO:root:响应 | 200
+INFO:root:2023-03-23 09:55:24 | 请求 GET | http://172.21.34.93:20232/d/3670218543497515008 | 请求IP 172.21.33.120
+INFO:root:响应 | 200
+INFO:root:2023-03-23 10:20:18 | 请求 GET | http://127.0.0.1:20232/d/1670237676366950400 | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-23 10:26:44 | 请求 GET | http://172.21.34.93:20232/ | 请求IP 172.21.33.121
+INFO:root:响应 | 200
+INFO:root:2023-03-23 14:14:26 | 请求 GET | http://127.0.0.1:20232/d/16699827280322396168 | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-23 14:14:31 | 请求 GET | http://127.0.0.1:20232/d/16699827280322396168 | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-23 14:14:38 | 请求 GET | http://127.0.0.1:20232/d/16699827280322396168 | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-23 14:14:38 | 请求 GET | http://127.0.0.1:20232/d/16699827280322396168 | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-23 14:14:39 | 请求 GET | http://127.0.0.1:20232/d/16699827280322396168 | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-23 14:14:39 | 请求 GET | http://127.0.0.1:20232/d/16699827280322396168 | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-23 14:15:30 | 请求 GET | http://127.0.0.1:20232/d/166998272803239616 | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-23 14:16:16 | 请求 GET | http://127.0.0.1:20232/d/1669982728032239616 | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-23 14:16:31 | 请求 GET | http://127.0.0.1:20232/d/1669982728032239616 | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-23 16:16:42 | 请求 GET | http://172.21.34.93:20232/d/1670325829727477760 | 请求IP 172.21.33.120
+INFO:root:响应 | 200
+INFO:root:2023-03-23 17:53:38 | 请求 GET | http://127.0.0.1:20232/d/1670345007757778944 | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-23 18:08:51 | 请求 GET | http://127.0.0.1:20232/d/1670345007757778944 | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-23 19:12:18 | 请求 GET | http://127.0.0.1:20232/d/3670369812775342080 | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-24 09:40:12 | 请求 GET | http://172.21.34.93:20232/d/3670218543497515008 | 请求IP 172.21.33.120
+INFO:root:响应 | 200
+INFO:root:2023-03-24 09:40:45 | 请求 GET | http://172.21.34.93:20232/ | 请求IP 172.21.33.120
+INFO:root:响应 | 200
+INFO:root:2023-03-24 09:40:56 | 请求 GET | http://172.21.34.93:20232/d/3670218543497515008 | 请求IP 172.21.33.120
+INFO:root:响应 | 200
+INFO:root:2023-03-24 09:46:26 | 请求 GET | http://172.21.34.93:20232/ | 请求IP 172.21.33.121
+INFO:root:响应 | 200
+INFO:root:2023-03-24 10:02:39 | 请求 GET | http://127.0.0.1:20232/d/1647008551891110912 | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-24 10:23:28 | 请求 GET | http://172.21.34.93:20232/d/1670601231762010112 | 请求IP 172.21.33.120
+INFO:root:响应 | 200
+INFO:root:2023-03-24 10:45:59 | 请求 GET | http://172.21.34.93:20232/d/1670606629517045760 | 请求IP 172.21.33.120
+INFO:root:响应 | 200
+INFO:root:2023-03-24 11:17:57 | 请求 GET | http://172.21.34.93:20232/d/1670614441592434688 | 请求IP 172.21.33.120
+INFO:root:响应 | 200
+INFO:root:2023-03-24 13:53:49 | 请求 GET | http://127.0.0.1:20232/d/1670345007757778944 | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-24 13:54:22 | 请求 GET | http://127.0.0.1:20232/d/1670308341204361216 | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-24 15:04:21 | 请求 GET | http://172.21.34.93:20232/ | 请求IP 172.21.33.121
+INFO:root:响应 | 200
+INFO:root:2023-03-24 15:24:04 | 请求 GET | http://127.0.0.1:20232/d/1670673284347277312 | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-24 17:14:26 | 请求 GET | http://172.21.34.93:20232/ | 请求IP 172.21.33.120
+INFO:root:响应 | 200
+INFO:root:2023-03-24 17:14:28 | 请求 GET | http://172.21.34.93:20232/d/3670683527104532480 | 请求IP 172.21.33.120
+INFO:root:响应 | 200
+INFO:uvicorn.error:Started server process [29864]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:root:2023-03-26 11:51:20 | 请求 GET | http://127.0.0.1:20232/ | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-26 11:51:56 | 请求 GET | http://127.0.0.1:20232/ | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-26 11:52:27 | 请求 GET | http://127.0.0.1:20232/ | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-26 11:52:49 | 请求 GET | http://127.0.0.1:20232/ | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-26 11:53:10 | 请求 GET | http://127.0.0.1:20232/ | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-26 11:53:31 | 请求 GET | http://127.0.0.1:20232/ | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-26 11:54:01 | 请求 GET | http://127.0.0.1:20232/ | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-26 11:54:18 | 请求 GET | http://127.0.0.1:20232/d/3670749972653576192 | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-26 11:54:27 | 请求 POST | http://127.0.0.1:20232/o | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-26 15:14:51 | 请求 POST | http://127.0.0.1:20232/o | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-27 09:27:49 | 请求 GET | http://127.0.0.1:20232/ | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-27 09:28:02 | 请求 POST | http://127.0.0.1:20232/o | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-27 09:37:08 | 请求 GET | http://172.21.34.93:20232/ | 请求IP 172.21.34.92
+INFO:root:响应 | 200
+INFO:root:2023-03-27 09:37:43 | 请求 POST | http://172.21.34.93:20232/o | 请求IP 172.21.34.92
+INFO:root:响应 | 200
+INFO:root:2023-03-27 09:57:02 | 请求 GET | http://172.21.34.93:20232/d/3669283141402521606 | 请求IP 172.21.33.120
+INFO:root:响应 | 200
+INFO:uvicorn.error:Started server process [13608]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:root:2023-03-27 10:01:00 | 请求 GET | http://127.0.0.1:20232/ | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-27 10:01:11 | 请求 GET | http://127.0.0.1:20232/ | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-27 15:28:53 | 请求 GET | http://127.0.0.1:20232/ | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-27 15:30:25 | 请求 GET | http://127.0.0.1:20232/ | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-27 15:31:06 | 请求 GET | http://127.0.0.1:20232/ | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-27 15:35:31 | 请求 GET | http://127.0.0.1:20232/ | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-27 15:36:58 | 请求 GET | http://127.0.0.1:20232/ | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-27 15:37:23 | 请求 GET | http://127.0.0.1:20232/ | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-27 15:38:32 | 请求 GET | http://127.0.0.1:20232/ | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-27 15:39:22 | 请求 GET | http://127.0.0.1:20232/ | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-27 15:42:18 | 请求 GET | http://127.0.0.1:20232/ | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-27 15:42:33 | 请求 GET | http://127.0.0.1:20232/ | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-27 15:42:52 | 请求 GET | http://127.0.0.1:20232/ | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-27 15:43:56 | 请求 GET | http://127.0.0.1:20232/ | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-27 15:44:16 | 请求 GET | http://127.0.0.1:20232/ | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-27 15:45:21 | 请求 GET | http://127.0.0.1:20232/d/1670345007757778944 | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-27 15:45:41 | 请求 GET | http://127.0.0.1:20232/ | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-27 15:47:02 | 请求 GET | http://127.0.0.1:20232/ | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-27 15:47:31 | 请求 GET | http://127.0.0.1:20232/ | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-27 15:47:40 | 请求 GET | http://127.0.0.1:20232/ | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-27 15:47:48 | 请求 GET | http://127.0.0.1:20232/ | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-27 15:51:19 | 请求 GET | http://172.21.34.93:20232/ | 请求IP 172.21.34.92
+INFO:root:响应 | 200
+INFO:root:2023-03-27 15:51:32 | 请求 GET | http://172.21.34.93:20232/d/3671059421209964544 | 请求IP 172.21.34.92
+INFO:root:响应 | 200
+INFO:root:2023-03-27 15:51:39 | 请求 GET | http://172.21.34.93:20232/ | 请求IP 172.21.34.92
+INFO:root:响应 | 200
+INFO:root:2023-03-27 15:51:41 | 请求 GET | http://172.21.34.93:20232/d/3671059421209964544 | 请求IP 172.21.34.92
+INFO:root:响应 | 200
+INFO:root:2023-03-27 15:51:53 | 请求 GET | http://127.0.0.1:20232/d/1670345007757778944 | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-27 15:52:37 | 请求 GET | http://172.21.34.93:20232/ | 请求IP 172.21.34.92
+INFO:root:响应 | 200
+INFO:root:2023-03-27 15:52:40 | 请求 GET | http://172.21.34.93:20232/d/3671675753877872640 | 请求IP 172.21.34.92
+INFO:root:响应 | 200
+INFO:root:2023-03-27 15:52:53 | 请求 GET | http://172.21.34.93:20232/d/3671675753877872640 | 请求IP 172.21.34.92
+INFO:root:响应 | 200
+INFO:root:2023-03-27 15:52:54 | 请求 GET | http://172.21.34.93:20232/d/3671675753877872640 | 请求IP 172.21.34.92
+INFO:root:响应 | 200
+INFO:root:2023-03-27 15:52:54 | 请求 GET | http://172.21.34.93:20232/d/3671675753877872640 | 请求IP 172.21.34.92
+INFO:root:响应 | 200
+INFO:root:2023-03-27 15:53:19 | 请求 GET | http://172.21.34.93:20232/d/3671675753877872640 | 请求IP 172.21.34.92
+INFO:root:响应 | 200
+INFO:root:2023-03-27 15:53:29 | 请求 GET | http://127.0.0.1:20232/ | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-27 15:54:36 | 请求 GET | http://127.0.0.1:20232/ | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-27 15:54:58 | 请求 GET | http://127.0.0.1:20232/ | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-27 15:55:06 | 请求 GET | http://127.0.0.1:20232/d/1670345007757778944 | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-27 15:56:04 | 请求 POST | http://127.0.0.1:20232/o | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-27 15:59:26 | 请求 GET | http://127.0.0.1:20232/ | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-27 15:59:31 | 请求 POST | http://127.0.0.1:20232/o | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-27 16:01:48 | 请求 GET | http://127.0.0.1:20232/ | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-27 16:02:12 | 请求 GET | http://127.0.0.1:20232/ | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-27 16:02:17 | 请求 GET | http://127.0.0.1:20232/d/1670345007757778944 | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-27 16:02:42 | 请求 GET | http://127.0.0.1:20232/ | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-27 16:02:48 | 请求 GET | http://127.0.0.1:20232/d/1670345007757778944 | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-27 16:25:47 | 请求 GET | http://127.0.0.1:20232/ | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-27 16:26:02 | 请求 GET | http://127.0.0.1:20232/ | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-27 16:26:39 | 请求 GET | http://127.0.0.1:20232/ | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-27 16:31:14 | 请求 GET | http://127.0.0.1:20232/ | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-27 16:31:44 | 请求 GET | http://127.0.0.1:20232/d/3670369812775342080 | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-27 16:32:36 | 请求 GET | http://127.0.0.1:20232/ | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-27 16:33:22 | 请求 GET | http://127.0.0.1:20232/ | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-27 16:34:00 | 请求 GET | http://127.0.0.1:20232/d/3670369812775342080 | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-27 16:38:21 | 请求 GET | http://127.0.0.1:20232/ | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-27 16:38:35 | 请求 GET | http://127.0.0.1:20232/d/3670369812775342080 | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-27 16:38:51 | 请求 GET | http://127.0.0.1:20232/ | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-27 16:40:00 | 请求 GET | http://127.0.0.1:20232/ | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-27 16:40:04 | 请求 POST | http://127.0.0.1:20232/o | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-27 16:42:07 | 请求 GET | http://127.0.0.1:20232/ | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-27 16:47:42 | 请求 GET | http://127.0.0.1:20232/ | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-27 16:47:53 | 请求 GET | http://127.0.0.1:20232/ | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-27 16:50:55 | 请求 GET | http://127.0.0.1:20232/ | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-27 16:52:43 | 请求 GET | http://127.0.0.1:20232/ | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-27 16:53:52 | 请求 GET | http://127.0.0.1:20232/ | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-27 16:53:59 | 请求 GET | http://127.0.0.1:20232/d/3670369812775342080 | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-27 16:54:40 | 请求 GET | http://127.0.0.1:20232/ | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-27 16:55:39 | 请求 GET | http://127.0.0.1:20232/ | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-27 16:55:47 | 请求 GET | http://127.0.0.1:20232/d/3670369812775342080 | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-27 16:56:51 | 请求 GET | http://127.0.0.1:20232/ | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-27 16:58:23 | 请求 GET | http://127.0.0.1:20232/ | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-27 16:58:34 | 请求 POST | http://127.0.0.1:20232/o | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-27 16:58:36 | 请求 GET | http://127.0.0.1:20232/ | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-27 16:58:57 | 请求 GET | http://172.21.34.93:20232/ | 请求IP 172.21.33.120
+INFO:root:响应 | 200
+INFO:root:2023-03-27 16:59:15 | 请求 GET | http://172.21.34.93:20232/d/ | 请求IP 172.21.33.120
+INFO:root:响应 | 404
+INFO:root:2023-03-27 17:01:20 | 请求 GET | http://127.0.0.1:20232/ | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-27 17:01:26 | 请求 GET | http://127.0.0.1:20232/d/3670369812775342080 | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-27 17:01:40 | 请求 POST | http://127.0.0.1:20232/o | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-27 17:02:17 | 请求 POST | http://127.0.0.1:20232/o | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-27 17:02:45 | 请求 GET | http://172.21.34.93:20232/ | 请求IP 172.21.34.92
+INFO:root:响应 | 200
+INFO:root:2023-03-27 17:03:09 | 请求 GET | http://172.21.34.93:20232/d/3671675753877872640 | 请求IP 172.21.34.92
+INFO:root:响应 | 200
+INFO:root:2023-03-27 17:03:39 | 请求 GET | http://172.21.34.93:20232/d/3671675753877872640 | 请求IP 172.21.34.92
+INFO:root:响应 | 200
+INFO:root:2023-03-27 17:03:59 | 请求 POST | http://172.21.34.93:20232/o | 请求IP 172.21.34.92
+INFO:root:响应 | 200
+INFO:root:2023-03-27 17:06:35 | 请求 GET | http://172.21.34.93:20232/ | 请求IP 172.21.34.92
+INFO:root:响应 | 200
+INFO:root:2023-03-27 17:06:36 | 请求 GET | http://172.21.34.93:20232/ | 请求IP 172.21.34.92
+INFO:root:响应 | 200
+INFO:root:2023-03-27 17:06:36 | 请求 GET | http://172.21.34.93:20232/ | 请求IP 172.21.34.92
+INFO:root:响应 | 200
+INFO:root:2023-03-27 17:06:36 | 请求 GET | http://172.21.34.93:20232/ | 请求IP 172.21.34.92
+INFO:root:响应 | 200
+INFO:root:2023-03-27 17:06:41 | 请求 GET | http://172.21.34.93:20232/ | 请求IP 172.21.34.92
+INFO:root:响应 | 200
+INFO:root:2023-03-27 17:06:41 | 请求 GET | http://172.21.34.93:20232/ | 请求IP 172.21.34.92
+INFO:root:响应 | 200
+INFO:root:2023-03-27 17:06:41 | 请求 GET | http://172.21.34.93:20232/ | 请求IP 172.21.34.92
+INFO:root:响应 | 200
+INFO:root:2023-03-27 17:07:17 | 请求 POST | http://127.0.0.1:20232/o | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-27 17:08:01 | 请求 GET | http://127.0.0.1:20232/d/3670369812775342080 | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-27 17:11:39 | 请求 GET | http://127.0.0.1:20232/ | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-27 17:11:53 | 请求 GET | http://127.0.0.1:20232/d/3670369812775342080 | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-27 17:12:00 | 请求 GET | http://127.0.0.1:20232/ | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-27 17:16:07 | 请求 GET | http://127.0.0.1:20232/ | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-27 17:16:10 | 请求 GET | http://127.0.0.1:20232/ | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-27 17:18:35 | 请求 GET | http://127.0.0.1:20232/ | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-27 17:19:39 | 请求 GET | http://127.0.0.1:20232/ | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-27 17:22:19 | 请求 GET | http://127.0.0.1:20232/ | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-27 17:22:25 | 请求 GET | http://127.0.0.1:20232/ | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-27 17:23:20 | 请求 GET | http://127.0.0.1:20232/ | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-27 17:25:04 | 请求 POST | http://127.0.0.1:20232/o | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-27 17:25:58 | 请求 GET | http://127.0.0.1:20232/d/3670369812775342080 | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-27 17:26:01 | 请求 GET | http://127.0.0.1:20232/d/3670369812775342080 | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-27 17:27:44 | 请求 GET | http://172.21.34.93:20232/d/1671795150901293056 | 请求IP 172.21.33.120
+INFO:root:响应 | 200
+INFO:root:2023-03-27 17:34:24 | 请求 GET | http://172.21.34.93:20232/ | 请求IP 172.21.33.41
+INFO:root:响应 | 200
+INFO:root:2023-03-27 17:34:42 | 请求 GET | http://172.21.34.93:20232/d/你是谁 | 请求IP 172.21.33.41
+INFO:root:响应 | 200
+INFO:root:2023-03-27 17:34:42 | 请求 GET | http://172.21.34.93:20232/d/你是谁 | 请求IP 172.21.33.41
+INFO:root:响应 | 200
+INFO:root:2023-03-27 17:34:43 | 请求 GET | http://172.21.34.93:20232/d/你是谁 | 请求IP 172.21.33.41
+INFO:root:响应 | 200
+INFO:root:2023-03-27 17:34:43 | 请求 GET | http://172.21.34.93:20232/d/你是谁 | 请求IP 172.21.33.41
+INFO:root:响应 | 200
+INFO:root:2023-03-27 17:34:44 | 请求 GET | http://172.21.34.93:20232/t/你是谁 | 请求IP 172.21.33.41
+INFO:root:响应 | 200
+INFO:root:2023-03-27 17:34:44 | 请求 GET | http://172.21.34.93:20232/t/你是谁 | 请求IP 172.21.33.41
+INFO:root:响应 | 200
+INFO:root:2023-03-27 17:34:45 | 请求 GET | http://172.21.34.93:20232/d/你是谁 | 请求IP 172.21.33.41
+INFO:root:响应 | 200
+INFO:root:2023-03-27 17:34:46 | 请求 GET | http://172.21.34.93:20232/d/你是谁 | 请求IP 172.21.33.41
+INFO:root:响应 | 200
+INFO:root:2023-03-27 17:34:46 | 请求 GET | http://172.21.34.93:20232/t/你是谁 | 请求IP 172.21.33.41
+INFO:root:响应 | 200
+INFO:root:2023-03-27 17:34:47 | 请求 GET | http://172.21.34.93:20232/t/你是谁 | 请求IP 172.21.33.41
+INFO:root:响应 | 200
+INFO:root:2023-03-27 17:34:48 | 请求 GET | http://172.21.34.93:20232/t/你是谁 | 请求IP 172.21.33.41
+INFO:root:响应 | 200
+INFO:root:2023-03-27 17:34:48 | 请求 GET | http://172.21.34.93:20232/t/你是谁 | 请求IP 172.21.33.41
+INFO:root:响应 | 200
+INFO:root:2023-03-27 17:35:01 | 请求 GET | http://172.21.34.93:20232/ | 请求IP 172.21.33.41
+INFO:root:响应 | 200
+INFO:root:2023-03-27 17:35:09 | 请求 GET | http://172.21.34.93:20232/ | 请求IP 172.21.33.41
+INFO:root:响应 | 200
+INFO:root:2023-03-27 17:36:08 | 请求 POST | http://172.21.34.93:20232/o | 请求IP 172.21.33.41
+INFO:root:响应 | 200
+INFO:root:2023-03-28 09:38:04 | 请求 GET | http://127.0.0.1:20232/ | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-28 10:10:11 | 请求 GET | http://127.0.0.1:20232/d/1670690173585068032 | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-28 10:22:27 | 请求 GET | http://127.0.0.1:20232/d/1664908722628300800 | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-28 10:30:13 | 请求 GET | http://172.21.34.93:20232/ | 请求IP 172.21.33.120
+INFO:root:响应 | 200
+INFO:root:2023-03-28 10:30:15 | 请求 GET | http://172.21.34.93:20232/d/3672048285257920512 | 请求IP 172.21.33.120
+INFO:root:响应 | 200
+INFO:root:2023-03-28 11:09:14 | 请求 GET | http://172.21.34.93:20232/d/1672059580295651328 | 请求IP 172.21.33.120
+INFO:root:响应 | 200
+INFO:root:2023-03-28 11:19:58 | 请求 GET | http://172.21.34.93:20232/d/1672064492945121280 | 请求IP 172.21.33.120
+INFO:root:响应 | 200
+INFO:root:2023-03-28 12:04:11 | 请求 GET | http://127.0.0.1:20232/t/密钥 | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-28 12:04:22 | 请求 GET | http://127.0.0.1:20232/t/密钥 | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-28 12:04:24 | 请求 GET | http://127.0.0.1:20232/d/密钥 | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-28 12:04:26 | 请求 GET | http://127.0.0.1:20232/d/密钥 | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-28 12:04:32 | 请求 GET | http://127.0.0.1:20232/t/密钥 | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-28 12:04:33 | 请求 GET | http://127.0.0.1:20232/ | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-28 12:04:37 | 请求 GET | http://127.0.0.1:20232/t/密钥 | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:uvicorn.error:Started server process [18904]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:uvicorn.error:Will watch for changes in these directories: ['D:\\turntool']
+INFO:uvicorn.error:Uvicorn running on http://0.0.0.0:20233 (Press CTRL+C to quit)
+INFO:uvicorn.error:Started reloader process [22380] using watchgod
+INFO:uvicorn.error:Started server process [20796]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:root:2023-03-28 12:05:24 | 请求 GET | http://127.0.0.1:20232/t/密钥 | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-28 12:06:46 | 请求 GET | http://127.0.0.1:20233/ | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-28 12:06:51 | 请求 GET | http://127.0.0.1:20233/t/密钥 | 请求IP 127.0.0.1
+INFO:uvicorn.error:Stopping reloader process [22380]
+INFO:uvicorn.error:Started server process [16004]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:uvicorn.error:Will watch for changes in these directories: ['D:\\turntool']
+INFO:uvicorn.error:Uvicorn running on http://0.0.0.0:20233 (Press CTRL+C to quit)
+INFO:uvicorn.error:Started reloader process [3900] using watchgod
+INFO:uvicorn.error:Started server process [8100]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:root:2023-03-28 12:08:09 | 请求 GET | http://127.0.0.1:20233/t/密码 | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:uvicorn.error:Shutting down
+INFO:uvicorn.error:Started server process [7332]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:uvicorn.error:Started server process [3876]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:root:2023-03-28 12:08:53 | 请求 GET | http://127.0.0.1:20232/ | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-28 12:08:59 | 请求 GET | http://127.0.0.1:20232/t/密钥 | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-28 12:09:27 | 请求 GET | http://127.0.0.1:20232/ | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-28 12:14:07 | 请求 POST | http://127.0.0.1:20232/o | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-28 12:14:21 | 请求 POST | http://127.0.0.1:20232/o | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-28 13:44:11 | 请求 GET | http://127.0.0.1:20232/ | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-28 13:46:26 | 请求 POST | http://127.0.0.1:20232/o | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-28 14:02:44 | 请求 GET | http://127.0.0.1:20232/ | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:uvicorn.error:Started server process [21072]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:uvicorn.error:Started server process [7632]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:uvicorn.error:Started server process [13604]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:uvicorn.error:Started server process [23296]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:uvicorn.error:Started server process [15680]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:uvicorn.error:Started server process [17272]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:uvicorn.error:Started server process [23196]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:uvicorn.error:Started server process [21364]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:uvicorn.error:Started server process [512]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:uvicorn.error:Started server process [6312]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:uvicorn.error:Will watch for changes in these directories: ['D:\\turntool']
+INFO:uvicorn.error:Uvicorn running on http://0.0.0.0:20232 (Press CTRL+C to quit)
+INFO:uvicorn.error:Started reloader process [22236] using watchgod
+INFO:uvicorn.error:Started server process [13420]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:root:2023-03-28 14:14:19 | 请求 GET | http://127.0.0.1:20232/ | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-28 14:15:39 | 请求 GET | http://127.0.0.1:20232/ | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-28 14:16:10 | 请求 GET | http://127.0.0.1:20232/ | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-28 14:19:17 | 请求 GET | http://127.0.0.1:20232/ | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-28 14:19:21 | 请求 POST | http://127.0.0.1:20232/chat | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-28 14:19:48 | 请求 POST | http://127.0.0.1:20232/chat | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-28 14:20:26 | 请求 GET | http://127.0.0.1:20232/ | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-28 14:20:36 | 请求 GET | http://127.0.0.1:20232/ | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-28 14:20:44 | 请求 GET | http://127.0.0.1:20232/ | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-28 14:20:59 | 请求 GET | http://127.0.0.1:20232/ | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:root:2023-03-28 14:21:07 | 请求 GET | http://127.0.0.1:20232/ | 请求IP 127.0.0.1
+INFO:root:响应 | 200
+INFO:uvicorn.error:Shutting down

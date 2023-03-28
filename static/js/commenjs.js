@@ -5,6 +5,7 @@ const dataBtn = document.getElementById('dataBtn');
 const transBtn = document.getElementById('transBtn');
 const signBtn = document.getElementById('signBtn');
 const ocrBtn = document.getElementById('ocrBtn');
+const chatBtn = document.getElementById('chatBtn');
 const input = document.getElementById('input');
 const output = document.getElementById('output');
 const copyBtn = document.getElementById('copyBtn');
@@ -201,6 +202,33 @@ ocrBtn.addEventListener('click', () => {
           'Accept': 'application/json'
         },
         body: JSON.stringify({image: inputText})
+      })
+      .then(response => {
+        if (response.ok) {
+          return response.json(); // 将response对象转换为JSON格式
+        } else {
+          throw new Error('Network response was not ok.');
+        }
+      })
+      .then(data => {
+        console.log(data); // 输出JSON格式的数据
+        output.value = data.output // 将返回的数据放入output元素中
+      })
+      .catch(error => {
+        console.error('There was a problem with the fetch operation:', error);
+      });
+    });
+
+chatBtn.addEventListener('click', () => {
+      const inputText = input.textContent.trim();
+      const url = '/chat';
+      fetch(url, {
+        method: 'POST',
+        headers: {
+          "Content-Type": "application/json;charset=UTF-8",
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({chatword: inputText})
       })
       .then(response => {
         if (response.ok) {

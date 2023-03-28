@@ -107,7 +107,7 @@ def translate(tstr: str):
             if zh:
                 trans_type = 'auto2en'
             url = "http://api.interpreter.caiyunai.com/v1/translator"
-            token = "s18sjx2ek2pl83j7861p"
+            token = "msc7eu66huxs0ukm85m2"
             payload = {
                 "source": tstr,
                 "trans_type": trans_type,
@@ -130,6 +130,7 @@ def translate(tstr: str):
 async def ocr(request: Request):
     API_KEY = "zaoZ9K2OQIvgNhm9gr8rjjEo"
     SECRET_KEY = "Ov05o1fmdtACt4OI8thRcPZLIjGHcUph"
+    output = {}
     try:
         proxies = {
             "http": None,
@@ -162,10 +163,49 @@ async def ocr(request: Request):
                 for line in res['words_result']:
                     output += line['words'] + '\n'
 
-    except:
-        output = {}
+    except Exception as e:
+        logging.error(e)
 
     return {'output': output}
+
+@app.post("/chat")
+async def chatapi(request: Request):
+    output = {}
+    try:
+        headers = {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36 Edg/111.0.1661.54",
+        }
+        url = "https://chatapi.javaex.cn/chat/789"
+        proxies = {
+            "http": None,
+            "https": None,
+        }
+        data = await request.json()
+        chatword = data.get("chatword", "")
+        if not chatword:
+            output = {}
+        else:
+            post_data = {
+                "questions": [
+                    {
+                        "role": "user",
+                        "content": chatword
+                    }
+                ],
+                "pkey": None
+            }
+            post_data = json.dumps(post_data, separators=(',', ':'))
+            response = requests.post(url, headers=headers, data=post_data, proxies=proxies)
+            if '操作成功' in response.json()['message']:
+                output = response.json()['data']['choices'][0]['message']['content']
+
+
+    except Exception as e:
+        logging.error(e)
+
+    return {'output': output}
+
+
 
 
 
