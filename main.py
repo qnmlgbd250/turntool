@@ -198,6 +198,9 @@ async def chatapi(request: Request):
             response = requests.post(url, headers=headers, data=post_data, proxies=proxies)
             if '操作成功' in response.json()['message']:
                 output = response.json()['data']['choices'][0]['message']['content']
+            else:
+                logging.error(response.text)
+                output = '操作失败,请稍后再试'
 
 
     except Exception as e:
